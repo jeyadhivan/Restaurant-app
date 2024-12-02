@@ -1,0 +1,49 @@
+.menu-list {
+  font-family: Roboto;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn-menu {
+  background-color: rgb(61, 114, 80);
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.count-num {
+  font-weight: 500;
+  font-size: 30px;
+}
+.button-menu {
+  background-color: transparent;
+  border-width: 0px;
+  color: white;
+  font-size: 30px;
+}
+.custom {
+  color: rgb(96, 78, 146);
+  font-size: 30px;
+}
+.menu-head {
+}
+.menu-img {
+  height: 200px;
+  width: 150px;
+}
+.dish-price {
+  color: rgb(39, 35, 35, 0.8);
+}
+.dish-description {
+  color: rgb(39, 35, 35, 0.4);
+}
+.dish-available {
+  color: red;
+}
+.dish-calories{
+  color:gold;
+}
