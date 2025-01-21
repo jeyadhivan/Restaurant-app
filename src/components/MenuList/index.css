@@ -1,8 +1,16 @@
 .menu-list {
   font-family: Roboto;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: rgb(243, 243, 243);
+  padding: 10px;
 }
 .btn-menu {
   background-color: rgb(61, 114, 80);
@@ -26,24 +34,35 @@
   font-size: 30px;
 }
 .custom {
-  color: rgb(96, 78, 146);
-  font-size: 30px;
+  color: rgb(126, 102, 195);
+  font-size: 18px;
 }
-.menu-head {
+.bg-card-menu {
+  padding: 20px;
 }
+
 .menu-img {
   height: 200px;
   width: 150px;
 }
 .dish-price {
   color: rgb(39, 35, 35, 0.8);
+  font-size: 15px;
 }
 .dish-description {
   color: rgb(39, 35, 35, 0.4);
+  font-size: 14px;
 }
 .dish-available {
   color: red;
 }
-.dish-calories{
-  color:gold;
+.dish-calories {
+  color: gold;
+  font-weight: 700;
+}
+.cl-image-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
 }

@@ -1,0 +1,72 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://png.pngtree.com/png-clipart/20230319/original/pngtree-restaurant-logo-design-png-image_8995745.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(21, 0, 255);
+}
+
+.form-container {
+  margin-bottom: 15px;
+  margin-left: 500px;
+  border: 1px solid red;
+  padding: 20px;
+  /* Box Shadow CSS */
+  -webkit-box-shadow: 3px -6px 248px 40px rgba(32, 217, 137, 0.5);
+  -moz-box-shadow: 3px -6px 248px 40px rgba(32, 217, 137, 0.5);
+  box-shadow: 3px -6px 248px 40px rgba(32, 217, 137, 0.5);
+  /* Box Settings */
+  background-color: #f5f8f2;
+  border-radius: 17px;
+  width: 442px;
+  height: 320px;
+ 
+}
+
+.login-field label {
+  margin-bottom: 15px;
+}
+
+.username-input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 90%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #134d48;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  min-width: 20px;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .login-container {
+    flex-direction: row;
+  }
+
+  .login-field {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  button {
+    flex-basis: 200px;
+    align-self: center;
+  }
+}
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+}

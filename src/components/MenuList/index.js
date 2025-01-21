@@ -1,6 +1,12 @@
 import './index.css'
 
-const MenuList = ({dishes, dishQuantities, updateDishQuantity}) => {
+const MenuList = ({
+  dishes,
+  dishQuantities,
+  updateDishQuantity,
+
+  handleAddToCart,
+}) => {
   const handleIncrement = dishId => {
     const newQuantity = dishQuantities[dishId] + 1
     updateDishQuantity(dishId, newQuantity)
@@ -14,7 +20,7 @@ const MenuList = ({dishes, dishQuantities, updateDishQuantity}) => {
   }
 
   return (
-    <div>
+    <div className="bg-card-menu">
       {dishes.map(dish => (
         <div key={dish.dish_id} className="menu-list">
           <div className="menu-item">
@@ -23,35 +29,38 @@ const MenuList = ({dishes, dishQuantities, updateDishQuantity}) => {
               {dish.dish_currency} {dish.dish_price}
             </p>
             <p className="dish-description">{dish.dish_description}</p>
-            <p className="dish-calories">{dish.dish_calories} calories</p>
-            {dish.dish_Availability ? (
-              <>
-                <div className="btn-menu">
-                  <button
-                    type="button"
-                    className="button-menu"
-                    onClick={() => handleDecrement(dish.dish_id)}
-                  >
-                    -
-                  </button>
-                  <p className="count-num">{dishQuantities[dish.dish_id]}</p>
-                  <button
-                    type="button"
-                    className="button-menu"
-                    onClick={() => handleIncrement(dish.dish_id)}
-                  >
-                    +
-                  </button>
-                </div>
-                {dish.addonCat.length > 0 && (
-                  <p className="custom">Customizations available</p>
-                )}
-              </>
-            ) : (
-              <p className="dish-available">Not available</p>
+
+            <div className="btn-menu">
+              <button
+                type="button"
+                className="button-menu"
+                onClick={() => handleDecrement(dish.dish_id)}
+                disabled={dishQuantities[dish.dish_id] === 0}
+              >
+                -
+              </button>
+              <p className="count-num">{dishQuantities[dish.dish_id]}</p>
+              <button
+                type="button"
+                className="button-menu"
+                onClick={() => handleIncrement(dish.dish_id)}
+              >
+                +
+              </button>
+            </div>
+
+            {dish.addonCat.length > 0 && (
+              <p className="custom">Customizations available</p>
             )}
+            {dishQuantities[dish.dish_id] > 0 ? (
+              <button type="button" onClick={() => handleAddToCart(dish)}>
+                ADD TO CART
+              </button>
+            ) : null}
           </div>
-          <div>
+          <div className="cl-image-card">
+            <p className="dish-calories">{dish.dish_calories} calories</p>
+
             <img
               src={dish.dish_image}
               alt={dish.dish_name}

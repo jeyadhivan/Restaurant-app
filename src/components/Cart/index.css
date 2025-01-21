@@ -1,0 +1,79 @@
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item p {
+  margin: 0 10px;
+  flex-grow: 1;
+}
+
+.cart-item button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #112d20;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-item button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.count-num {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.button-menu {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bg-card-menu {
+  margin: 20px;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: #16191b;
+  padding: 20px;
+}
+
+/* Remove All button styling */
+.remove-all-btn {
+  background-color: #65a752;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.remove-all-btn:hover {
+  background-color: #2a4622;
+}
+
