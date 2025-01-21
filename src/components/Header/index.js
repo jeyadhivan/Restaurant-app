@@ -7,10 +7,14 @@ import './index.css'
 const Header = ({cartCount, onLogout}) => {
   const {restaurantName} = useRestaurantName()
 
+  const onClickLogout = () => {
+    onLogout()
+  }
+
   return (
     <div className="header">
-      <Link to="/">
-        <h1 className="logo">{restaurantName}</h1>
+      <Link to="/" className="logo">
+        <h1>{restaurantName}</h1>
       </Link>
       <div className="cart">
         <p>My Orders</p>
@@ -21,7 +25,7 @@ const Header = ({cartCount, onLogout}) => {
           <p className="counter">{cartCount}</p>
         </div>
       </div>
-      <button type="button" onClick={onLogout}>
+      <button type="button" onClick={onClickLogout}>
         Logout
       </button>
     </div>

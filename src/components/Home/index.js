@@ -68,7 +68,7 @@ const Home = ({history}) => {
   }
 
   const handleLogout = () => {
-    Cookies.remove('isLoggedIn')
+    Cookies.remove('jwt_token')
     history.push('/login')
   }
 

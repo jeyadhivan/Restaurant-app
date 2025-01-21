@@ -99,7 +99,7 @@ class Login extends Component {
           <h1>Welcome!</h1>
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
-          <button type="submit" className="login-button">
+          <button type="submit" className="button">
             Login
           </button>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}

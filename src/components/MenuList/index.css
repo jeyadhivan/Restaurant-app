@@ -3,7 +3,8 @@
   font-size: 20px;
   display: flex;
   justify-content: space-between;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 10px;
@@ -64,4 +65,44 @@
   justify-content: space-around;
   align-items: center;
   width: 40%;
+}
+.not-available {
+  color: red;
+}
+
+.red-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+
+  background-color: transparent;
+}
+
+.red-circle {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  color: red;
+}
+.green-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(39, 115, 23);
+
+  background-color: transparent;
+}
+
+.green-circle {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(36, 97, 28);
+  border-radius: 50%;
+  color: rgb(36, 97, 28);
 }
