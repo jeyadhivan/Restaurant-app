@@ -15,7 +15,6 @@ const Home = ({history}) => {
 
   const [activeMenuCategory, setActiveMenuCategory] = useState('')
 
-  // Define getCategories before using it in useEffect
   const getCategories = async () => {
     const response = await fetch(
       'https://apis2.ccbp.in/restaurant-app/restaurant-menu-list-details',

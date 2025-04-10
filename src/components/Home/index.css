@@ -1,12 +1,15 @@
 .categories-slider {
   width: 100%;
   padding: 10px;
+  padding-top: 120px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(238, 245, 243);
   font-size: 30px;
+  position:fixed;
+  top:120;
 }
 .active {
   border-bottom: 2px solid red;

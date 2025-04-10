@@ -18,7 +18,6 @@ const MenuList = ({
       updateDishQuantity(dishId, newQuantity)
     }
   }
-  console.log(dishes)
 
   return (
     <div className="bg-card-menu">

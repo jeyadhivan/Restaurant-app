@@ -53,10 +53,7 @@ export const CartProvider = ({children}) => {
     setCartList([])
   }
 
-  const cartCount = cartList.reduce(
-    (count, cartItem) => count + cartItem.quantity,
-    0,
-  )
+  const cartCount = cartList.length
 
   return (
     <CartContext.Provider
