@@ -41,9 +41,23 @@ This project is a **responsive restaurant menu application** where users can bro
 
 ---
 
+## 🔐 Login Credentials
+
+Use any of the demo users:
+
+username: rahul
+
+password: rahul@2021
+
+
+⚠️ This app uses a mock API with pre-configured usernames and passwords.
+
+---
+
 ## 🔗 Live Demo
 
-**🌐 Hosted URL:** [Visit Live Site]((https://gjfoodresapp.ccbp.tech/))  
+**🌐 Hosted URL:** [Visit Live Site](https://gjfoodresapp.ccbp.tech/)
+
 **📁 GitHub Repo:** [View Repository](https://github.com/jeyadhivan/restaurant-app)
 
 ---
